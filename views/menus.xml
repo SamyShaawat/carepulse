@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <menuitem id="menu_carepulse_root" name="CarePulse" sequence="10"/>
+    <menuitem id="menu_carepulse_root" name="CarePulse" sequence="10" groups="group_carepulse_user"/>
+    <menuitem id="menu_carepulse_operations" name="Operations" parent="menu_carepulse_root" sequence="10"/>
+    <menuitem id="menu_carepulse_reporting" name="Reporting" parent="menu_carepulse_root" sequence="90"/>
+    <menuitem id="menu_carepulse_config" name="Configuration" parent="menu_carepulse_root" sequence="100"
+              groups="group_carepulse_manager"/>
 </odoo>
